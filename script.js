@@ -27,9 +27,9 @@ const products = {
     script: {
         title: "📜 Script WhatsApp Bot",
         items: [
-            { name: "Script Vellia Elvya", price: "Hubungi Admin", features: ["3000+ Fitur Premium", "Base Folder High-End", "Type CJS Ringan", "Update Berkala"] },
-            { name: "Script Alice Assistant", price: "Hubungi Admin", features: ["1700+ Fitur Pilihan", "Ringan & User Friendly", "Menu Estetik", "Full Button System", "Full Update Lifetime"] },
-            { name: "Script Ochobot", price: "Hubungi Admin", features: ["400+ Fitur Utama", "Hemat RAM Hosting", "Simple & Fast", "Cocok Untuk Pemula"] }
+            { name: "Script Vellia Elvya", price: "100.000", features: ["3000+ Fitur Premium", "Base Folder High-End", "Type CJS Ringan", "Update Berkala"] },
+            { name: "Script Alice Assistant", price: "50.000", features: ["1700+ Fitur Pilihan", "Ringan & User Friendly", "Menu Estetik", "Full Button System", "Full Update Lifetime"] },
+            { name: "Script Ochobot", price: "30.000", features: ["400+ Fitur Utama", "Hemat RAM Hosting", "Simple & Fast", "Cocok Untuk Pemula"] }
         ]
     },
     panel: {
