@@ -45,10 +45,10 @@ const products = {
             { name: "Jasa Rename Script", price: "15.000", features: ["Ganti Nama & No Owner", "Tampilan Jadi Rapi", "Hapus Watermark Lama", "Proses Kilat"] },
             { name: "Tambah/Fix Fitur", price: "10.000", features: ["Request Fitur Baru", "Perbaikan Bug/Error", "Integrasi API", "Instalasi Plugin"] }
         ],
-    nokos: {
+   nokos: {
         title: "📱 Nokos",
         items: [
-            { name: "Nokos All Negara", price: "5.000 - 30.000", features: ["Harga Setiap Negara Berbeda", "Lebih detail tanyakan admin"] },
+            { name: "Nokos All Negara", price: "5.000 - 30.000", features: ["Harga Setiap Negara Berbeda", "Lebih detail tanyakan admin"] }
         ]
     }
 };
