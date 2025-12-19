@@ -6,15 +6,15 @@
     <title>Kyyze Nava Store | Digital Marketplace</title>
     
     <meta property="og:title" content="Kyyze Nava Store">
-    <meta property="og:description" content="Empowering Your Digital Experience with Premium Automation.">
+    <meta property="og:description" content="Premium Digital Services & Bot WhatsApp Automation.">
     <meta property="og:image" content="https://files.catbox.moe/ld0cyx.jpg">
     <link rel="icon" href="https://files.catbox.moe/ld0cyx.jpg">
     
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body data-theme="dark">
+<body>
 
     <div id="loading" class="loading">
         <div class="loader-box">
@@ -23,56 +23,67 @@
         </div>
     </div>
 
-    <div class="greeting-bar">
-        <div class="container">
-            <p><i class="fas fa-sparkles"></i> Halo, Selamat Datang di Kyyze Nava Store!</p>
-        </div>
-    </div>
-
-    <header id="header">
-        <div class="container">
-            <div class="nav-wrapper">
-                <h1 class="brand-logo">Kyyze Nava <span class="highlight">Store</span></h1>
-            </div>
-        </div>
-    </header>
-
-    <div class="scroll-progress" id="scrollProgress"></div>
-
-    <section class="hero">
+    <section class="hero-header">
         <div id="particles" class="particles"></div>
-        <div class="container hero-container">
-            <div class="hero-glass-card">
-                <h2 id="typingText" class="typing-text"></h2>
-                <p class="hero-slogan">Empowering Your Digital Experience with Premium Automation.</p>
-                <div class="hero-badges">
-                    <span><i class="fas fa-shield-halved"></i> Terpercaya</span>
-                    <span><i class="fas fa-bolt"></i> Fast Respon</span>
-                </div>
+        <div class="container hero-content">
+            <div class="pill-badge">
+                <span>🔥 Happy Shop!</span>
             </div>
             
-            <div class="main-menu-grid">
+            <h1 class="brand-title">KYYZE-NAVA</h1>
+            <h2 class="sub-brand">WhatsApp Bot</h2>
+            
+            <p class="hero-slogan">
+                Empowering Your Digital Experience with Premium Automation, 
+                High Quality Scripts & Trusted Services.
+            </p>
+            
+            <a href="#main-menu" class="btn-pilih">
+                <i class="fas fa-bullseye"></i> PILIH PRODUK
+            </a>
+        </div>
+    </section>
+
+    <section id="main-menu" class="menu-section">
+        <div class="container">
+            <div class="selector-grid">
                 <button class="menu-card" onclick="showProducts('rental')">
-                    <div class="menu-icon-box"><i class="fab fa-whatsapp"></i></div>
+                    <div class="menu-icon"><i class="fab fa-whatsapp"></i></div>
                     <div class="menu-info">
                         <h3>Sewa Bot</h3>
-                        <p>Layanan Bot WA Premium</p>
+                        <p>Bot Masuk Grup Kamu</p>
+                    </div>
+                </button>
+
+                <button class="menu-card" onclick="showProducts('jadibot')">
+                    <div class="menu-icon"><i class="fas fa-robot"></i></div>
+                    <div class="menu-info">
+                        <h3>Jadi Bot</h3>
+                        <p>Numpang Bot (Reg/Rename)</p>
                     </div>
                 </button>
 
                 <button class="menu-card" onclick="showProducts('script')">
-                    <div class="menu-icon-box"><i class="fas fa-code"></i></div>
+                    <div class="menu-icon"><i class="fas fa-file-code"></i></div>
                     <div class="menu-info">
-                        <h3>Script & Panel</h3>
-                        <p>Script & Server Gahar</p>
+                        <h3>Script</h3>
+                        <p>Vellia, Alice, Ochobot</p>
+                    </div>
+                </button>
+
+                <button class="menu-card" onclick="showProducts('panel')">
+                    <div class="menu-icon"><i class="fas fa-server"></i></div>
+                    <div class="menu-info">
+                        <h3>Panel</h3>
+                        <p>Pterodactyl RAM 1-2GB</p>
                     </div>
                 </button>
 
                 <button class="menu-card" onclick="showProducts('jasa')">
-                    <div class="menu-icon-box"><i class="fas fa-magic"></i></div>
+                    <div class="menu-icon"><i class="fas fa-magic"></i></div>
                     <div class="menu-info">
                         <h3>Jasa Edit</h3>
-                        <p>Custom & Fix Fitur</p>
+                        <p>Rename & Fix Fitur</p>
                     </div>
                 </button>
             </div>
@@ -80,53 +91,50 @@
     </section>
 
     <section id="product-lists" class="product-lists-container">
-        <div class="container">
-            <div id="product-content"></div>
-        </div>
+        <div class="container" id="product-content">
+            </div>
     </section>
 
     <section class="contact-section">
         <div class="container">
-            <h2 class="section-title">Connect With Us</h2>
+            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-grid">
-                <div class="contact-item order">
-                    <i class="fab fa-whatsapp icon-lg"></i>
-                    <h3>WhatsApp Admin</h3>
-                    <button onclick="window.open('https://wa.me/62895365140691')">Chat Order</button>
+                <div class="contact-item wa-admin">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>WA Admin</h3>
+                    <button onclick="window.open('https://wa.me/62895365140691')">Order Now</button>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-bullhorn icon-lg"></i>
-                    <h3>WhatsApp Channel</h3>
-                    <button onclick="window.open('https://whatsapp.com/channel/0029VbCCuaNJuyAHH9fxfQ3f')">Update Info</button>
+                <div class="contact-item wa-chan">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>WA Channel</h3>
+                    <button onclick="window.open('https://whatsapp.com/channel/0029VbCCuaNJuyAHH9fxfQ3f')">Update</button>
                 </div>
-                <div class="contact-item">
-                    <i class="fas fa-users icon-lg"></i>
-                    <h3>WhatsApp Group</h3>
-                    <button onclick="window.open('https://chat.whatsapp.com/Icaqx4eDvU29jnExo2XLgU')">Join Komunitas</button>
+                <div class="contact-item wa-group">
+                    <i class="fas fa-users"></i>
+                    <h3>WA Group</h3>
+                    <button onclick="window.open('https://chat.whatsapp.com/Icaqx4eDvU29jnExo2XLgU')">Join G1</button>
                 </div>
-                <div class="contact-item tele">
-                    <i class="fab fa-telegram-plane icon-lg"></i>
-                    <h3>Telegram Group</h3>
-                    <button onclick="window.open('https://t.me/kyyzenavaofficial')">Join Telegram</button>
+                <div class="contact-item wa-group2">
+                    <i class="fas fa-user-plus"></i>
+                    <h3>WA Group 2</h3>
+                    <button onclick="window.open('https://chat.whatsapp.com/IrXJlK7yMdx5xof1GkEdFO')">Join G2</button>
                 </div>
-                <div class="contact-item testi">
-                    <i class="fas fa-star icon-lg"></i>
+                <div class="contact-item tele-testi">
+                    <i class="fas fa-clipboard-check"></i>
                     <h3>Testimoni</h3>
                     <button onclick="window.open('https://t.me/kyyzenavaofficialtestimoni')">Cek Testi</button>
                 </div>
-                <div class="contact-item tiktok">
-                    <i class="fab fa-tiktok icon-lg"></i>
-                    <h3>TikTok Dev</h3>
-                    <button onclick="window.open('https://www.tiktok.com/@kyyzenava')">Follow Dev</button>
+                <div class="contact-item tiktok-dev">
+                    <i class="fab fa-tiktok"></i>
+                    <h3>TikTok</h3>
+                    <button onclick="window.open('https://www.tiktok.com/@kyyzenava')">Follow</button>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="container">
-            <p>© 2025 <span class="highlight">Kyyze Nava Store</span>. Crafted with Passion.</p>
-        </div>
+        <p>© 2025 <span class="highlight">Kyyze Nava Store</span>. All Rights Reserved.</p>
     </footer>
 
     <script src="script.js"></script>
