@@ -6,19 +6,21 @@
     <title>Kyyze Nava Marketplace</title>
     
     <meta property="og:title" content="Kyyze Nava Store">
-    <meta property="og:description" content="Sewa Bot - Jadi Bot - Script - Nokos">
+    <meta property="og:description" content="Sewa Bot - Jadi Bot - Script - Nokos All Negara">
     <meta property="og:image" content="https://files.catbox.moe/ld0cyx.jpg">
+    <meta property="og:type" content="website">
     
     <link rel="icon" href="https://files.catbox.moe/ld0cyx.jpg">
+    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="loading" class="loading active">
+    <div id="loading" class="loading">
         <div class="loading-content">
             <div class="loading-spinner"></div>
-            <p>Loading Kyyze Nava...</p>
+            <p>Kyyze Nava Store...</p>
         </div>
     </div>
 
@@ -28,16 +30,21 @@
         <div class="container">
             <nav>
                 <div class="logo">
+                    <i class="fab fa-whatsapp logo-icon"></i>
                     <h1>Kyyze<span class="logo-highlight">Nava</span></h1>
                 </div>
+                
                 <div class="header-right">
-                    <div class="clock"><span id="clock">00:00</span></div>
-                    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                    <div class="clock" id="clock">00:00:00</div>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
+
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="nav-link active">Beranda</a></li>
-                    <li><a href="https://t.me/kyyzenavaofficial" target="_blank">Telegram</a></li>
-                    <li><a href="https://www.tiktok.com/@kyyzenava" target="_blank">TikTok</a></li>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#product-lists" class="nav-link">Produk</a></li>
+                    <li><a href="https://t.me/kyyzenavaofficial" target="_blank" class="nav-link">Telegram</a></li>
                 </ul>
             </nav>
         </div>
@@ -47,15 +54,34 @@
         <div class="particles" id="particles"></div>
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge"><span class="badge">💎 Kyyze Nava Store</span></div>
-                <h2 class="hero-title"><span class="gradient-text" id="typingText"></span></h2>
-                <p class="hero-subtitle">Solusi Bot WhatsApp Murah, Cepat, dan Terpercaya</p>
+                <div class="hero-badge">
+                    <span class="badge"><i class="fas fa-certificate"></i> Trusted & Fast Response</span>
+                </div>
+                <h2 class="hero-title">
+                    <span class="gradient-text" id="typingText"></span>
+                </h2>
+                <p class="hero-subtitle">
+                    Penyedia layanan bot WhatsApp, Script, dan kebutuhan digital lainnya dengan kualitas premium.
+                </p>
+                
                 <div class="product-selector">
                     <div class="selector-buttons">
-                        <button class="selector-btn" onclick="showProducts('sewabot')"><span>Sewa Bot</span></button>
-                        <button class="selector-btn" onclick="showProducts('jadibot')"><span>Jadi Bot</span></button>
-                        <button class="selector-btn" onclick="showProducts('digital')"><span>Script & Panel</span></button>
-                        <button class="selector-btn" onclick="showProducts('jasa')"><span>Jasa Edit</span></button>
+                        <button class="selector-btn" onclick="showProducts('rental')">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>Sewa Bot</span>
+                        </button>
+                        <button class="selector-btn" onclick="showProducts('jadibot')">
+                            <i class="fas fa-robot"></i>
+                            <span>Jadi Bot</span>
+                        </button>
+                        <button class="selector-btn" onclick="showProducts('script')">
+                            <i class="fas fa-code"></i>
+                            <span>Script & Panel</span>
+                        </button>
+                        <button class="selector-btn" onclick="showProducts('jasa')">
+                            <i class="fas fa-tools"></i>
+                            <span>Jasa Edit</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -64,29 +90,50 @@
 
     <section id="product-lists" class="product-lists-container">
         <div class="container">
-            <div id="product-content"></div>
+            <div id="product-content">
+                </div>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>Kyyze Nava</h3>
-                    <p>Official Store for Digital Needs. Aman, Terpercaya, dan Berkualitas.</p>
+                    <h3>Kyyze Nava Store</h3>
+                    <p>Tempat terbaik untuk memenuhi kebutuhan bot WhatsApp dan layanan digital Anda.</p>
                 </div>
-                <div class="footer-links">
-                    <a href="https://t.me/kyyzenavaofficial"><i class="fab fa-telegram"></i> Telegram</a>
-                    <a href="https://www.tiktok.com/@kyyzenava"><i class="fab fa-tiktok"></i> TikTok</a>
+                
+                <div class="footer-social">
+                    <h4>Contact Us</h4>
+                    <div class="social-links">
+                        <a href="https://wa.me/62895365140691" target="_blank">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="https://t.me/kyyzenavaofficial" target="_blank">
+                            <i class="fab fa-telegram"></i> Telegram
+                        </a>
+                        <a href="https://www.tiktok.com/@kyyzenava" target="_blank">
+                            <i class="fab fa-tiktok"></i> TikTok
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="footer-bottom"><p>© 2025 Kyyze Nava. All rights reserved.</p></div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Kyyze Nava. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
-    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
-    <div id="toast" class="toast"><span id="toastMessage"></span></div>
+    <button id="themeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
 
-    <script src="./script.js"></script>
+    <div id="toast" class="toast">
+        <i class="fas fa-info-circle"></i>
+        <span id="toastMessage">Pesan berhasil dikirim!</span>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
