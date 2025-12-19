@@ -11,8 +11,8 @@ const products = {
     rental: {
         title: "🤖 Layanan Sewa Bot",
         items: [
-            { name: "Sewabot Reguler", price: "30.000", features: ["Fitur Downloader", "AI Chat Active", "Khusus Grup", "Aktif 30 Hari"] },
-            { name: "Sewabot VIP", price: "50.000", features: ["Semua Fitur Premium", "Bebas Masuk Bot", "Prioritas Respon", "Aktif 30 Hari"] }
+            { name: "Sewabot Reguler", price: "30.000", features: ["Fitur Downloader", "AI Chat Active", "Khusus Grup", "Bebas Req Nama dan Tema Bot", "Masa Aktif: PERMANEN"] },
+            { name: "Sewabot VIP", price: "50.000", features: ["Semua Fitur Premium", "Bebas Masuk Bot", "Prioritas Respon", "Bebas Req Nama dan Tema Bot", "Masa Aktif: PERMANEN"] }
         ]
     },
     jadibot: {
@@ -20,8 +20,8 @@ const products = {
         items: [
             { name: "Jadi Bot Reguler", price: "50.000", features: ["Fitur Lengkap", "Full Akses Chat", "Masa Aktif: PERMANEN"] },
   { name: "Jadi Bot Reguler (Rename)", price: "70.000", features: ["Bisa Custom Nama Bot", "Fitur Lengkap", "Tampilan Profesional", "Masa Aktif: PERMANEN"] },
-  { name: "Jadi Bot VIP", price: "90.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Full Akses Chat", "Anti Delay / Lebih Stabil", "Bebas Req Nama dan Tema", "Masa Aktif: PERMANEN"] },
-  { name: "Jadi Bot VIP (Rename)", price: "110.000", features: ["Bebas Req Nama dan Tema Bot", "Prioritas Server", "Fitur Super Lengkap", "Tampilan Premium & Profesional", "Anti Delay / Lebih Stabil", "Support Prioritas", "Masa Aktif: PERMANEN"] }
+  { name: "Jadi Bot VIP", price: "90.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Full Akses Chat", "Anti Delay / Lebih Stabil", "Masa Aktif: PERMANEN"] },
+  { name: "Jadi Bot VIP (Rename)", price: "110.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Tampilan Premium & Profesional", "Anti Delay / Lebih Stabil", "Support Prioritas", "Masa Aktif: PERMANEN"] }
         ]
     },
     script: {
