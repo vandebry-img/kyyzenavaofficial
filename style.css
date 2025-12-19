@@ -136,8 +136,18 @@ header {
     border-radius: 15px; display: flex; align-items: center; justify-content: center;
     font-size: 1.5rem; color: var(--primary);
 }
-.menu-info h3 { font-size: 1.1rem; text-align: left; margin-bottom: 2px; }
-.menu-info p { font-size: 0.8rem; color: var(--text-dim); text-align: left; }
+.menu-info h3 { 
+    font-size: 1.1rem; 
+    text-align: left; 
+    margin-bottom: 2px; 
+    color: #ffffff; /* Mengubah judul menu menjadi putih */
+}
+
+.menu-info p { 
+    font-size: 0.8rem; 
+    color: #cbd5e1; /* Mengubah deskripsi menjadi putih abu-abu agar tidak flat */
+    text-align: left; 
+}
 
 /* Product Display */
 .product-lists-container { padding: 40px 20px; display: none; }
