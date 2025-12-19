@@ -18,25 +18,25 @@ const products = {
     jadibot: {
         title: "⚙️ Layanan Jadi Bot",
         items: [
-            { name: "Jadi Bot Reguler", price: "50.000", features: ["Numpang Bot Admin", "Fitur Lengkap", "Full Akses Chat", "Aktif 30 Hari"] },
-  { name: "Jadi Bot Reguler (Rename)", price: "70.000", features: ["Bisa Custom Nama Bot", "Fitur Lengkap", "Tampilan Profesional", "Aktif 30 Hari"] },
-  { name: "Jadi Bot VIP", price: "90.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Full Akses Chat", "Anti Delay / Lebih Stabil", "Support Prioritas", "Aktif 30 Hari"] },
-  { name: "Jadi Bot VIP (Rename)", price: "110.000", features: ["Custom Nama Bot", "Prioritas Server", "Fitur Super Lengkap", "Tampilan Premium & Profesional", "Anti Delay / Lebih Stabil", "Support Prioritas", "Aktif 30 Hari"] }
+            { name: "Jadi Bot Reguler", price: "50.000", features: ["Fitur Lengkap", "Full Akses Chat", "Masa Aktif: PERMANEN"] },
+  { name: "Jadi Bot Reguler (Rename)", price: "70.000", features: ["Bisa Custom Nama Bot", "Fitur Lengkap", "Tampilan Profesional", "Masa Aktif: PERMANEN"] },
+  { name: "Jadi Bot VIP", price: "90.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Full Akses Chat", "Anti Delay / Lebih Stabil", "Bebas Req Nama dan Tema", "Masa Aktif: PERMANEN"] },
+  { name: "Jadi Bot VIP (Rename)", price: "110.000", features: ["Bebas Req Nama dan Tema Bot", "Prioritas Server", "Fitur Super Lengkap", "Tampilan Premium & Profesional", "Anti Delay / Lebih Stabil", "Support Prioritas", "Masa Aktif: PERMANEN"] }
         ]
     },
     script: {
         title: "📜 Script WhatsApp Bot",
         items: [
-            { name: "Script Vellia Elvya", price: "Hubungi Admin", features: ["3000+ Fitur Premium", "Base Folder High-End", "Full Case Fitur", "Update Berkala"] },
-            { name: "Script Alice Assistant", price: "Hubungi Admin", features: ["1700+ Fitur Pilihan", "Ringan & User Friendly", "Menu Estetik", "No Button System"] },
+            { name: "Script Vellia Elvya", price: "Hubungi Admin", features: ["3000+ Fitur Premium", "Base Folder High-End", "Type CJS Ringan", "Update Berkala"] },
+            { name: "Script Alice Assistant", price: "Hubungi Admin", features: ["1700+ Fitur Pilihan", "Ringan & User Friendly", "Menu Estetik", "Full Button System", "Full Update Lifetime"] },
             { name: "Script Ochobot", price: "Hubungi Admin", features: ["400+ Fitur Utama", "Hemat RAM Hosting", "Simple & Fast", "Cocok Untuk Pemula"] }
         ]
     },
     panel: {
         title: "🖥️ Panel Pterodactyl",
         items: [
-            { name: "Panel RAM 1GB", price: "10.000", features: ["Uptime Server 99.9%", "Anti Delay / Lag", "Lokasi Server Indo/SG", "Full Akses Panel"] },
-            { name: "Panel RAM 2GB", price: "15.000", features: ["Uptime Server 99.9%", "Lebih Stabil", "Lokasi Server Indo/SG", "Full Akses Panel"] }
+            { name: "Panel RAM 10GB", price: "8.000", features: ["Uptime Server 99.9%", "Anti Delay / Lag", "Lokasi Server Indo/SG", "Full Akses Panel"] },
+            { name: "Panel RAM Unlimited", price: "10.000", features: ["Uptime Server 99.9%", "Lebih Stabil", "Lokasi Server Indo/SG", "Full Akses Panel"] }
         ]
     },
     jasa: {
@@ -44,6 +44,11 @@ const products = {
         items: [
             { name: "Jasa Rename Script", price: "15.000", features: ["Ganti Nama & No Owner", "Tampilan Jadi Rapi", "Hapus Watermark Lama", "Proses Kilat"] },
             { name: "Tambah/Fix Fitur", price: "10.000", features: ["Request Fitur Baru", "Perbaikan Bug/Error", "Integrasi API", "Instalasi Plugin"] }
+        ],
+    nokos: {
+        title: "📱 Nokos",
+        items: [
+            { name: "Nokos All Negara", price: "5.000 - 30.000", features: ["Harga Setiap Negara Berbeda", "Lebih detail tanyakan admin"] },
         ]
     }
 };
