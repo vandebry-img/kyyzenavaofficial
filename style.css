@@ -10,8 +10,8 @@
     --primary-glow: rgba(56, 189, 248, 0.4);
     --accent: #ff6b6b;       /* Pastel Red untuk Pill Badge */
     
-    --text-white: #ffffff;
-    --text-dim: #d3ebff;
+    --text-white: #454545;
+    --text-dim: #454545;
     
     --border: rgba(255, 255, 255, 0.1);
     --font-brand: 'Space Grotesk', sans-serif;
@@ -92,11 +92,16 @@ body {
     font-family: var(--font-brand);
     font-size: clamp(3rem, 12vw, 5.5rem);
     font-weight: 800;
-    color: var(--primary);
+    
+    /* Warna Biru Malam (Midnight Blue) */
+    color: #191970; 
+    
+    /* Tambahkan Glow tipis agar tulisan tetap "hidup" di background gelap */
+    text-shadow: 0 0 15px rgba(25, 25, 112, 0.5);
+    
     line-height: 1;
     margin-bottom: 5px;
     text-transform: uppercase;
-    text-shadow: 0 0 30px var(--primary-glow);
 }
 
 .sub-brand {
@@ -124,8 +129,7 @@ body {
     padding: 18px 50px;
     border-radius: 20px;
     font-family: var(--font-brand);
-    font-weight: 700;
-    text-decoration: none;
+    font-weight: 700; text-decoration: none;
     display: inline-flex;
     align-items: center;
     gap: 12px;
