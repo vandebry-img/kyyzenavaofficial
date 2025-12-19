@@ -1,241 +1,101 @@
 <!DOCTYPE html>
-<html lang="id" data-theme="dark">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Azbry-MD Marketplace</title>
-    
-    <!-- WhatsApp/OG Meta Tags -->
-    <meta property="og:title" content="Azbry-MD Marketplace">
-    <meta property="og:description" content="Script - Sewa - Role Premium - Nokos">
-    <meta property="og:image" content="https://files.catbox.moe/ld0cyx.jpg">
-    <meta property="og:url" content="https://azbrybuy.vercel.app/">
-    <meta property="og:type" content="website">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Script WhatsApp Bot Azbry-MD dengan fitur AI, Downloader, dan 200+ fitur lainnya">
-    <meta name="keywords" content="whatsapp bot, azbry md, script bot, sewa bot, role premium, nokos">
-    <meta name="author" content="Azbry-MD">
-    
-    <!-- Favicon -->
-    <link rel="icon" href="https://files.catbox.moe/ld0cyx.jpg">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kyyze Nava</title>
+
+  <meta name="description" content="Kyyze Nava - Sewabot, Jadibot, Script Bot, Nokos, Panel Pterodactyl">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Scroll Progress Bar -->
-    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <!-- Loading Screen -->
-    <div id="loading" class="loading active">
-        <div class="loading-content">
-            <img src="https://files.catbox.moe/ld0cyx.jpg" alt="Logo" class="loading-logo">
-            <div class="loading-spinner"></div>
-            <p>Loading Azbry-MD...</p>
-        </div>
+<header class="header">
+  <h1>Kyyze Nava</h1>
+  <p class="subtitle">WhatsApp Bot Service & Digital Tools</p>
+  <a href="#produk" class="cta">Lihat Produk</a>
+</header>
+
+<section id="produk" class="produk">
+  <h2>Daftar Produk</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Sewabot Reguler</h3>
+      <span class="harga">Rp30.000</span>
+      <p>Bot WhatsApp siap pakai untuk grup. Fitur dasar admin, auto respon, dan tools grup.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Saya%20order%20Sewabot%20Reguler">Order via WhatsApp</a>
     </div>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="https://files.catbox.moe/ld0cyx.jpg" alt="Azbry-MD Logo" class="logo-img">
-                    <h1>Azbry<span class="logo-highlight">MD</span></h1>
-                </div>
-                
-                <div class="header-right">
-                    <div class="realtime-info">
-                        <div class="clock" id="realTimeClock">
-                            <i class="far fa-clock"></i>
-                            <span id="clock">00:00</span>
-                        </div>
-                    </div>
-                    
-                    <button class="hamburger" id="hamburger">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
-                
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Beranda</a></li>
-                    <li><a href="#products" class="nav-link"><i class="fas fa-box"></i> Produk</a></li>
-                    <li><a href="#contact" class="nav-link"><i class="fas fa-phone"></i> Kontak</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <!-- Particles Background -->
-        <div class="particles" id="particles"></div>
-        
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span class="badge">🔥 Happy Shop!</span>
-                </div>
-                
-                <h2 class="hero-title">
-                    <span class="gradient-text" id="typingText">AZBRY-MD</span>
-                    WhatsApp Bot
-                </h2>
-                
-                <p class="hero-subtitle">
-                    Script bot WhatsApp dengan fitur AI, Downloader, dan 200+ fitur
-                </p>
-                
-                <!-- Product Selector -->
-                <div class="product-selector">
-                    <h3 class="selector-title">🎯 PILIH PRODUK</h3>
-                    <div class="selector-buttons">
-                        <button class="selector-btn" data-product="script">
-                            <i class="fas fa-code"></i>
-                            <span>Script Bot</span>
-                            <small>SC ORI</small>
-                        </button>
-                        
-                        <button class="selector-btn" data-product="rental">
-                            <i class="fas fa-server"></i>
-                            <span>Sewa Bot</span>
-                            <small>1 GRUP</small>
-                        </button>
-                        
-                        <button class="selector-btn" data-product="role">
-                            <i class="fas fa-crown"></i>
-                            <span>Role Premium</span>
-                            <small>PREMIUM USER</small>
-                        </button>
-                        
-                        <button class="selector-btn" data-product="nokos">
-                            <i class="fas fa-sim-card"></i>
-                            <span>NOKOS INDO</span>
-                            <small>7K</small>
-                        </button>
-                    </div>
-                </div>
-                
-                <!-- Hero Stats -->
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <i class="fas fa-users"></i>
-                        <div>
-                            <span class="stat-number" data-count="500">0</span>
-                            <span class="stat-label">User</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-star"></i>
-                        <div>
-                            <span class="stat-number" data-count="4.9">0</span>
-                            <span class="stat-label">Rating</span>
-                        </div>
-                    </div>
-                    <div class="stat-item">
-                        <i class="fas fa-bolt"></i>
-                        <div>
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Lists Container -->
-    <main id="product-lists" class="product-lists-container">
-        <!-- Product lists will be loaded here via JavaScript -->
-    </main>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">📞 HUBUNGI KAMI</h2>
-            <div class="contact-content">
-                <div class="contact-card">
-                    <div class="contact-icon">
-                        <i class="fab fa-whatsapp"></i>
-                    </div>
-                    <h3>WhatsApp Admin</h3>
-                    <p>Pesan langsung via WhatsApp untuk konsultasi & pemesanan</p>
-                    <a href="https://wa.me/6285189988271?text=Halo%20admin%20Azbry-MD" 
-                       class="btn-whatsapp" target="_blank" id="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Chat Sekarang
-                    </a>
-                    
-                    <div class="contact-info">
-                        <h4><i class="fas fa-clock"></i> Jam Operasional</h4>
-                        <p>08:00 - 22:00 WIB (Setiap Hari)</p>
-                        
-                        <h4><i class="fas fa-credit-card"></i> Metode Pembayaran</h4>
-                        <div class="payment-methods">
-                            <span class="payment-method">Dana</span>
-                            <span class="payment-method">OVO</span>
-                            <span class="payment-method">Gopay</span>
-                            <span class="payment-method">QRIS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="https://files.catbox.moe/ld0cyx.jpg" alt="Logo" class="footer-logo">
-                    <h3>Azbry<span class="logo-highlight">MD</span></h3>
-                    <p>WhatsApp Bot Script Premium</p>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Produk</h4>
-                    <a href="#" class="product-link" data-product="script">Script Bot</a>
-                    <a href="#" class="product-link" data-product="rental">Sewa Bot</a>
-                    <a href="#" class="product-link" data-product="role">Role Premium</a>
-                    <a href="#" class="product-link" data-product="nokos">NOKOS</a>
-                </div>
-                
-                <div class="footer-info">
-                    <h4>Info</h4>
-                    <p><i class="fas fa-shield-alt"></i> Aman & Terpercaya</p>
-                    <p><i class="fas fa-headset"></i> Support 24/7</p>
-                    <p><i class="fas fa-bolt"></i> Instant Delivery</p>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>© 2024 Azbry-MD. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating Buttons -->
-    <button id="themeToggle" class="theme-toggle">
-        <i class="fas fa-moon"></i>
-        <i class="fas fa-sun"></i>
-    </button>
-
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-chevron-up"></i>
-    </button>
-
-    <!-- Toast Notification -->
-    <div id="toast" class="toast">
-        <i class="fas fa-check-circle"></i>
-        <span id="toastMessage">Notification</span>
+    <div class="card">
+      <h3>Sewabot VIP</h3>
+      <span class="harga">Rp50.000</span>
+      <p>Versi premium dengan fitur lebih lengkap, respon lebih cepat, dan prioritas support.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Saya%20order%20Sewabot%20VIP">Order via WhatsApp</a>
     </div>
 
-    <!-- Scripts -->
-    <script src="./script.js"></script>
+    <div class="card">
+      <h3>Jadibot</h3>
+      <span class="harga">Rp90.000</span>
+      <p>Pembuatan bot WhatsApp langsung jadi. Cocok untuk pemula tanpa ribet setup.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Saya%20order%20Jadibot">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Jadibot (Rename)</h3>
+      <span class="harga">Rp110.000</span>
+      <p>Bot custom dengan nama, command, dan identitas sesuai request.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Saya%20order%20Jadibot%20Rename">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Script Bot (3 Script)</h3>
+      <span class="harga">Chat Admin</span>
+      <p>Beberapa pilihan script bot WhatsApp untuk developer atau pengembangan lanjutan.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Info%20Script%20Bot">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Nokos All Negara</h3>
+      <span class="harga">Rp5.000</span>
+      <p>Nomor kosong berbagai negara untuk bot & testing. Disarankan bukan nomor utama.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Order%20Nokos">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Panel Pterodactyl</h3>
+      <span class="harga">Rp10.000</span>
+      <p>Panel hosting bot untuk monitoring, start/stop server, dan manajemen resource.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Order%20Panel%20Pterodactyl">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Rename Script</h3>
+      <span class="harga">Rp15.000</span>
+      <p>Mengganti nama bot, command, watermark agar terlihat lebih original.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Order%20Rename%20Script">Order via WhatsApp</a>
+    </div>
+
+    <div class="card">
+      <h3>Tambah Fitur Script</h3>
+      <span class="harga">Rp10.000</span>
+      <p>Penambahan fitur custom sesuai kebutuhan bot kamu.</p>
+      <a class="order" href="https://wa.me/62895365140691?text=Order%20Tambah%20Fitur">Order via WhatsApp</a>
+    </div>
+
+  </div>
+</section>
+
+<section class="kontak">
+  <h2>Kontak Admin</h2>
+  <p>WhatsApp: <strong>62895365140691</strong></p>
+  <p>TikTok: <strong>@kyyzenava</strong></p>
+</section>
+
+<footer>
+  <p>© 2025 Kyyze Nava</p>
+</footer>
+
 </body>
 </html>
