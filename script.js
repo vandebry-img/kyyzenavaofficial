@@ -35,6 +35,7 @@ const products = {
     panel: {
         title: "🖥️ Panel Pterodactyl",
         items: [
+            { name: "Panel RAM 5GB", price: "5.000", features: ["Uptime Server 97.9%", "Lokasi Server Indo/SG", "Full Akses Panel"] },
             { name: "Panel RAM 10GB", price: "8.000", features: ["Uptime Server 99.9%", "Anti Delay / Lag", "Lokasi Server Indo/SG", "Full Akses Panel"] },
             { name: "Panel RAM Unlimited", price: "10.000", features: ["Uptime Server 99.9%", "Lebih Stabil", "Lokasi Server Indo/SG", "Full Akses Panel"] }
         ]
