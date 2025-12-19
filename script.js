@@ -1,29 +1,26 @@
-// ===== KONFIGURASI =====
-const ADMIN_WA = "62895365140691";
+// ===== CONFIG =====
+const ADMIN = "62895365140691";
 const BRAND = "Kyyze Nava";
 
-// ===== SMOOTH SCROLL CTA =====
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function (e) {
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(el => {
+  el.addEventListener("click", e => {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute("href"));
-    if (target) {
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+    document.querySelector(el.getAttribute("href"))
+      ?.scrollIntoView({ behavior:"smooth" });
   });
 });
 
-// ===== ORDER VIA WHATSAPP =====
+// ===== WHATSAPP ORDER =====
 document.querySelectorAll(".order").forEach(btn => {
-  btn.addEventListener("click", function (e) {
+  btn.addEventListener("click", e => {
     e.preventDefault();
+    const card = btn.closest(".card");
+    const produk = card.querySelector("h3").innerText;
+    const harga = card.querySelector(".harga").innerText;
 
-    const card = this.closest(".card");
-    const produk = card.querySelector("h3")?.innerText || "-";
-    const harga = card.querySelector(".harga")?.innerText || "-";
-
-    const pesan = 
-`Halo Admin ${BRAND},
+    const msg =
+`Halo ${BRAND}
 Saya ingin order:
 
 📦 Produk: ${produk}
@@ -31,12 +28,14 @@ Saya ingin order:
 
 Mohon info selanjutnya.`;
 
-    const url = `https://wa.me/${ADMIN_WA}?text=${encodeURIComponent(pesan)}`;
-    window.open(url, "_blank");
+    window.open(
+      `https://wa.me/${ADMIN}?text=${encodeURIComponent(msg)}`,
+      "_blank"
+    );
   });
 });
 
-// ===== ANIMASI MASUK (LIGHT) =====
+// ===== SCROLL ANIMATION (CARD FADE UP) =====
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -44,13 +43,17 @@ const observer = new IntersectionObserver(entries => {
       entry.target.style.transform = "translateY(0)";
     }
   });
-}, { threshold: 0.1 });
+}, { threshold: 0.15 });
 
 document.querySelectorAll(".card").forEach(card => {
-  card.style.opacity = 0;
-  card.style.transform = "translateY(20px)";
-  card.style.transition = "0.4s ease";
+  card.style.transition = "0.6s ease";
   observer.observe(card);
 });
 
-console.log("Kyyze Nava landing page ready");
+// ===== HERO PARALLAX =====
+window.addEventListener("scroll", () => {
+  document.querySelector(".header")
+    .style.transform = `translateY(${window.scrollY * 0.2}px)`;
+});
+
+console.log("Kyyze Nava — Azbry-style loaded");
