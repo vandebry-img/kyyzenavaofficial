@@ -184,7 +184,7 @@ body {
     font-size: 1.8rem; color: var(--primary);
 }
 
-.menu-info h3 { font-size: 1.2rem; color: #ffffff; margin-bottom: 4px; text-align: left; }
+.menu-info h3 { font-size: 1.2rem; color: #888888; margin-bottom: 4px; text-align: left; }
 .menu-info p { font-size: 0.85rem; color: var(--text-dim); text-align: left; }
 
 /* --- PRODUCT CARDS --- */
