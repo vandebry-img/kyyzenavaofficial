@@ -1,139 +1,95 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" data-theme="light">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kyyze Nava</title>
-
-  <meta name="description" content="Kyyze Nava - Sewabot, Jadibot, Script Bot, Nokos, Panel Pterodactyl">
-  <meta name="theme-color" content="#1e3a8a">
-
-  <!-- STYLE -->
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Kyyze Nava Marketplace</title>
+    
+    <meta property="og:title" content="Kyyze Nava Store">
+    <meta property="og:description" content="Sewa Bot - Jadi Bot - Script - Nokos">
+    <meta property="og:image" content="https://files.catbox.moe/ld0cyx.jpg">
+    <meta property="og:type" content="website">
+    
+    <meta name="description" content="Layanan Jasa Bot WhatsApp Terpercaya oleh Kyyze Nava">
+    <meta name="author" content="Kyyze Nava">
+    
+    <link rel="icon" href="https://files.catbox.moe/ld0cyx.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
-  <!-- ===== HERO ===== -->
-  <header class="header" id="home">
-    <h1>Kyyze Nava</h1>
-    <p class="subtitle">
-      WhatsApp Bot Service • Automation • Digital Tools
-    </p>
-    <a href="#produk" class="cta">Lihat Produk</a>
-  </header>
-
-  <!-- ===== PRODUK ===== -->
-  <section id="produk" class="produk">
-    <h2>Produk & Layanan</h2>
-
-    <div class="grid">
-
-      <div class="card">
-        <h3>Sewabot Reguler</h3>
-        <div class="harga">Rp30.000</div>
-        <p>
-          Bot WhatsApp siap pakai untuk grup. Fitur dasar admin, auto respon,
-          dan manajemen grup.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Sewabot VIP</h3>
-        <div class="harga">Rp50.000</div>
-        <p>
-          Versi premium dengan fitur lebih lengkap, performa stabil,
-          dan prioritas support.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Jadibot</h3>
-        <div class="harga">Rp90.000</div>
-        <p>
-          Pembuatan bot WhatsApp langsung jadi.
-          Cocok untuk pemula tanpa ribet setup.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Jadibot (Rename)</h3>
-        <div class="harga">Rp110.000</div>
-        <p>
-          Bot custom dengan nama, command,
-          dan identitas sesuai request kamu.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Script Bot (3 Script)</h3>
-        <div class="harga">Chat Admin</div>
-        <p>
-          Beberapa pilihan script bot WhatsApp.
-          Cocok untuk developer & pengembangan lanjutan.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Nokos All Negara</h3>
-        <div class="harga">Rp5.000</div>
-        <p>
-          Nomor kosong berbagai negara untuk kebutuhan bot & testing.
-          Disarankan bukan nomor utama.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Panel Pterodactyl</h3>
-        <div class="harga">Rp10.000</div>
-        <p>
-          Panel hosting bot untuk start/stop server,
-          monitoring, dan manajemen resource.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Rename Script</h3>
-        <div class="harga">Rp15.000</div>
-        <p>
-          Mengganti nama bot, command,
-          watermark agar terlihat lebih original.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
-      <div class="card">
-        <h3>Tambah Fitur Script</h3>
-        <div class="harga">Rp10.000</div>
-        <p>
-          Penambahan fitur custom sesuai kebutuhan bot kamu.
-        </p>
-        <a href="#" class="order">Order via WhatsApp</a>
-      </div>
-
+    <div id="loading" class="loading active">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Kyyze Nava...</p>
+        </div>
     </div>
-  </section>
 
-  <!-- ===== KONTAK ===== -->
-  <section class="kontak" id="kontak">
-    <h2>Kontak Admin</h2>
-    <p>WhatsApp: <strong>62895365140691</strong></p>
-    <p>TikTok: <strong>@kyyzenava</strong></p>
-  </section>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <h1>Kyyze<span class="logo-highlight">Nava</span></h1>
+                </div>
+                <div class="header-right">
+                    <div class="clock" id="realTimeClock"><span id="clock">00:00</span></div>
+                    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
+                </div>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-link active">Beranda</a></li>
+                    <li><a href="#products" class="nav-link">Produk</a></li>
+                    <li><a href="https://t.me/kyyzenavaofficial" target="_blank">Telegram</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2025 Kyyze Nava. All rights reserved.</p>
-  </footer>
+    <section id="home" class="hero">
+        <div class="particles" id="particles"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge"><span class="badge">💎 Kyyze Nava Store</span></div>
+                <h2 class="hero-title"><span class="gradient-text" id="typingText">KYYZE NAVA</span></h2>
+                <p class="hero-subtitle">Solusi Bot WhatsApp Murah, Cepat, dan Terpercaya</p>
+                <div class="product-selector">
+                    <div class="selector-buttons">
+                        <button class="selector-btn" data-product="rental"><span>Sewa Bot</span></button>
+                        <button class="selector-btn" data-product="jadibot"><span>Jadi Bot</span></button>
+                        <button class="selector-btn" data-product="script"><span>Script & Panel</span></button>
+                        <button class="selector-btn" data-product="jasa"><span>Jasa Edit</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- SCRIPT -->
-  <script src="script.js"></script>
+    <div id="product-lists" class="product-lists-container">
+        <div class="container" id="product-content">
+            </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Kyyze Nava</h3>
+                    <p>Official Store for Digital Needs</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://t.me/kyyzenavaofficial"><i class="fab fa-telegram"></i> Telegram</a>
+                    <a href="https://www.tiktok.com/@kyyzenava"><i class="fab fa-tiktok"></i> TikTok</a>
+                </div>
+            </div>
+            <div class="footer-bottom"><p>© 2025 Kyyze Nava.</p></div>
+        </div>
+    </footer>
+
+    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+    <div id="toast" class="toast"><span id="toastMessage"></span></div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
