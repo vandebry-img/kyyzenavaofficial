@@ -43,7 +43,7 @@ body {
     text-align: center;
     position: relative;
     /* Gradient Pastel Biru Tua ke Hitam Lembut */
-    background: radial-gradient(circle at top, #1e3a8a 0%, #0a1128 100%);
+    background: radial-gradient(circle at top, #1e3a8a 0%, #f1f5f9 100%);
     padding: 20px;
 }
 
