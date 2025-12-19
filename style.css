@@ -212,7 +212,7 @@ body {
     font-weight: 800; font-size: 0.7rem; margin-bottom: 15px;
 }
 
-.p-price { font-size: 2.2rem; font-weight: 800; color: #fff; margin-bottom: 20px; }
+.p-price { font-size: 2.2rem; font-weight: 800; color: #888888; margin-bottom: 20px; }
 
 .p-features { list-style: none; text-align: left; margin-bottom: 30px; }
 .p-features li { color: var(--text-dim); margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; }
