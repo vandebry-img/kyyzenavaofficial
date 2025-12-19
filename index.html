@@ -8,25 +8,21 @@
     <meta property="og:title" content="Kyyze Nava Store">
     <meta property="og:description" content="Sewa Bot - Jadi Bot - Script - Nokos">
     <meta property="og:image" content="https://files.catbox.moe/ld0cyx.jpg">
-    <meta property="og:type" content="website">
-    
-    <meta name="description" content="Layanan Jasa Bot WhatsApp Terpercaya oleh Kyyze Nava">
-    <meta name="author" content="Kyyze Nava">
     
     <link rel="icon" href="https://files.catbox.moe/ld0cyx.jpg">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
-
     <div id="loading" class="loading active">
         <div class="loading-content">
             <div class="loading-spinner"></div>
             <p>Loading Kyyze Nava...</p>
         </div>
     </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
 
     <header id="header">
         <div class="container">
@@ -35,13 +31,13 @@
                     <h1>Kyyze<span class="logo-highlight">Nava</span></h1>
                 </div>
                 <div class="header-right">
-                    <div class="clock" id="realTimeClock"><span id="clock">00:00</span></div>
+                    <div class="clock"><span id="clock">00:00</span></div>
                     <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
                 </div>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home" class="nav-link active">Beranda</a></li>
-                    <li><a href="#products" class="nav-link">Produk</a></li>
                     <li><a href="https://t.me/kyyzenavaofficial" target="_blank">Telegram</a></li>
+                    <li><a href="https://www.tiktok.com/@kyyzenava" target="_blank">TikTok</a></li>
                 </ul>
             </nav>
         </div>
@@ -52,44 +48,45 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-badge"><span class="badge">💎 Kyyze Nava Store</span></div>
-                <h2 class="hero-title"><span class="gradient-text" id="typingText">KYYZE NAVA</span></h2>
+                <h2 class="hero-title"><span class="gradient-text" id="typingText"></span></h2>
                 <p class="hero-subtitle">Solusi Bot WhatsApp Murah, Cepat, dan Terpercaya</p>
                 <div class="product-selector">
                     <div class="selector-buttons">
-                        <button class="selector-btn" data-product="rental"><span>Sewa Bot</span></button>
-                        <button class="selector-btn" data-product="jadibot"><span>Jadi Bot</span></button>
-                        <button class="selector-btn" data-product="script"><span>Script & Panel</span></button>
-                        <button class="selector-btn" data-product="jasa"><span>Jasa Edit</span></button>
+                        <button class="selector-btn" onclick="showProducts('sewabot')"><span>Sewa Bot</span></button>
+                        <button class="selector-btn" onclick="showProducts('jadibot')"><span>Jadi Bot</span></button>
+                        <button class="selector-btn" onclick="showProducts('digital')"><span>Script & Panel</span></button>
+                        <button class="selector-btn" onclick="showProducts('jasa')"><span>Jasa Edit</span></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div id="product-lists" class="product-lists-container">
-        <div class="container" id="product-content">
-            </div>
-    </div>
+    <section id="product-lists" class="product-lists-container">
+        <div class="container">
+            <div id="product-content"></div>
+        </div>
+    </section>
 
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h3>Kyyze Nava</h3>
-                    <p>Official Store for Digital Needs</p>
+                    <p>Official Store for Digital Needs. Aman, Terpercaya, dan Berkualitas.</p>
                 </div>
                 <div class="footer-links">
                     <a href="https://t.me/kyyzenavaofficial"><i class="fab fa-telegram"></i> Telegram</a>
                     <a href="https://www.tiktok.com/@kyyzenava"><i class="fab fa-tiktok"></i> TikTok</a>
                 </div>
             </div>
-            <div class="footer-bottom"><p>© 2025 Kyyze Nava.</p></div>
+            <div class="footer-bottom"><p>© 2025 Kyyze Nava. All rights reserved.</p></div>
         </div>
     </footer>
 
-    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i><i class="fas fa-sun"></i></button>
+    <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon"></i></button>
     <div id="toast" class="toast"><span id="toastMessage"></span></div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
