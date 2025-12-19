@@ -1,218 +1,253 @@
 /* ================================================
     PROJECT: Kyyze Nava Store - Ultimate UI
     STYLE: Mobile-First, Deep Navy, Anti-Flat
-    ================================================ */
+   ================================================ */
 
 :root {
-    /* Color Palette - Deep Navy Elite */
-    --bg-deep: #0F172A;      /* Navy Dasar */
-    --bg-card: #1E293B;      /* Navy Kartu */
-    --primary: #A2D2FF;      /* Pastel Blue */
-    --primary-glow: rgba(162, 210, 255, 0.4);
-    --accent: #38BDF8;
+    --bg-deep: #060b1d;      /* Deep Navy Dasar */
+    --bg-navy: #0f172a;      /* Navy Kartu */
+    --primary: #38bdf8;      /* Sky Blue sesuai gambar */
+    --primary-glow: rgba(56, 189, 248, 0.3);
+    --accent: #ef4444;       /* Merah untuk badge */
     
-    --text-white: #F8FAFC;
-    --text-dim: #94A3B8;
+    --text-white: #ffffff;
+    --text-dim: #94a3b8;
     
-    --glass: rgba(30, 41, 59, 0.7);
-    --border: rgba(255, 255, 255, 0.1);
-    
+    --border: rgba(255, 255, 255, 0.08);
     --font-brand: 'Space Grotesk', sans-serif;
     --font-body: 'Plus Jakarta Sans', sans-serif;
     
-    --shadow: 0 10px 30px -10px rgba(0,0,0,0.5);
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Base Reset */
 * {
     margin: 0; padding: 0; box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--bg-deep);
     color: var(--text-white);
     font-family: var(--font-body);
-    line-height: 1.6;
     overflow-x: hidden;
 }
 
-/* --- ANIMATIONS --- */
-@keyframes glowPulse {
-    0% { box-shadow: 0 0 5px var(--primary-glow); }
-    50% { box-shadow: 0 0 20px var(--primary-glow); }
-    100% { box-shadow: 0 0 5px var(--primary-glow); }
+/* --- HERO HEADER (Sesuai Gambar) --- */
+.hero-header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: radial-gradient(circle at top, #1e3a8a 0%, #060b1d 100%);
+    padding: 20px;
 }
 
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
+.particles {
+    position: absolute; inset: 0; pointer-events: none; z-index: 1;
 }
 
-@keyframes particleUp {
+.particle {
+    position: absolute; background: var(--primary); border-radius: 50%;
+    opacity: 0.3; animation: floatUp var(--duration) infinite linear;
+}
+
+@keyframes floatUp {
     from { transform: translateY(100vh) scale(0); opacity: 0; }
-    30% { opacity: 0.5; }
-    to { transform: translateY(-10vh) scale(1.5); opacity: 0; }
+    50% { opacity: 0.4; }
+    to { transform: translateY(-10vh) scale(1.2); opacity: 0; }
 }
 
-/* --- COMPONENTS --- */
+.hero-content {
+    position: relative; z-index: 10;
+    max-width: 800px;
+}
 
-/* Preloader */
+.pill-badge {
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    padding: 10px 25px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+    animation: glowPill 2s infinite alternate;
+}
+
+@keyframes glowPill {
+    from { box-shadow: 0 0 5px rgba(239, 68, 68, 0.2); }
+    to { box-shadow: 0 0 15px rgba(239, 68, 68, 0.4); }
+}
+
+.brand-title {
+    font-family: var(--font-brand);
+    font-size: clamp(3rem, 10vw, 5rem);
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.sub-brand {
+    font-family: var(--font-brand);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero-slogan {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+}
+
+.btn-pilih {
+    background: rgba(30, 58, 138, 0.6);
+    border: 1px solid var(--primary);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 20px;
+    font-family: var(--font-brand);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: var(--transition);
+}
+
+.btn-pilih:hover {
+    background: var(--primary);
+    color: #000;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px var(--primary-glow);
+}
+
+/* --- MAIN MENU SECTION --- */
+.menu-section {
+    padding: 80px 20px;
+    background: var(--bg-deep);
+}
+
+.selector-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu-card {
+    background: var(--bg-navy);
+    border: 1px solid var(--border);
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.menu-card:hover {
+    background: rgba(255,255,255,0.05);
+    border-color: var(--primary);
+    transform: scale(1.03);
+}
+
+.menu-icon {
+    width: 60px; height: 60px;
+    background: rgba(56, 189, 248, 0.1);
+    border-radius: 15px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; color: var(--primary);
+}
+
+.menu-info h3 { font-size: 1.2rem; color: #fff; margin-bottom: 4px; text-align: left; }
+.menu-info p { font-size: 0.85rem; color: var(--text-dim); text-align: left; }
+
+/* --- PRODUCT CARDS --- */
+.product-lists-container { padding: 40px 20px; display: none; }
+.section-title { font-family: var(--font-brand); text-align: center; font-size: 2.2rem; margin-bottom: 40px; }
+
+.product-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.p-card {
+    background: var(--bg-navy);
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.p-badge {
+    position: absolute; top: 20px; right: 20px;
+    background: var(--primary); color: #000;
+    padding: 5px 12px; border-radius: 8px; font-weight: 800; font-size: 0.7rem;
+}
+
+.p-price { font-size: 2.2rem; font-weight: 800; color: var(--primary); margin: 20px 0; }
+
+.p-features { list-style: none; text-align: left; margin-bottom: 30px; }
+.p-features li { color: var(--text-dim); margin-bottom: 10px; font-size: 0.95rem; }
+.p-features i { color: var(--primary); margin-right: 10px; }
+
+.btn-buy {
+    width: 100%; padding: 18px; background: var(--primary); color: #000;
+    border: none; border-radius: 15px; font-weight: 800; cursor: pointer; transition: 0.3s;
+}
+
+/* --- CONTACT SECTION (6 Grid) --- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.contact-item {
+    background: var(--bg-navy);
+    border: 1px solid var(--border);
+    padding: 30px 15px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.contact-item i { font-size: 2.5rem; margin-bottom: 15px; display: block; color: var(--primary); }
+.contact-item h3 { font-size: 0.9rem; margin-bottom: 15px; }
+.contact-item button {
+    width: 100%; padding: 12px; border: none; border-radius: 10px;
+    font-weight: 700; cursor: pointer; font-size: 0.8rem;
+}
+
+/* Button Colors */
+.wa-admin button { background: #25d366; color: white; }
+.wa-chan button, .wa-group button, .wa-group2 button { background: #1d4ed8; color: white; }
+.tele-testi button { background: #0088cc; color: white; }
+.tiktok-dev button { background: white; color: black; }
+
+/* Preloader & Utilities */
 .loading {
     position: fixed; inset: 0; background: var(--bg-deep);
     z-index: 9999; display: flex; justify-content: center; align-items: center;
-    transition: opacity 0.5s ease;
+    transition: 0.5s;
 }
-.loader-box { text-align: center; }
-.spinner {
-    width: 50px; height: 50px; border: 4px solid var(--bg-card);
-    border-top-color: var(--primary); border-radius: 50%;
-    animation: spin 1s linear infinite; margin-bottom: 15px;
-}
+.loader-text { margin-top: 15px; font-family: var(--font-brand); letter-spacing: 3px; }
+.spinner { width: 40px; height: 40px; border: 3px solid var(--border); border-top-color: var(--primary); border-radius: 50%; animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }
-.loader-text { font-family: var(--font-brand); font-weight: 700; letter-spacing: 2px; }
 
-/* Greeting Bar */
-.greeting-bar {
-    background: linear-gradient(90deg, var(--primary-dark), var(--accent));
-    color: #0F172A; padding: 10px 0; text-align: center;
-    font-size: 0.75rem; font-weight: 800; letter-spacing: 1px;
-    position: relative; z-index: 1001;
-}
+footer { padding: 50px 20px; text-align: center; border-top: 1px solid var(--border); color: var(--text-dim); }
 
-/* Header (Anti-Flat) */
-header {
-    height: 75px; display: flex; align-items: center;
-    background: var(--glass); backdrop-filter: blur(15px);
-    border-bottom: 1px solid var(--border);
-    position: sticky; top: 0; z-index: 1000;
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .brand-title { font-size: 3.5rem; }
+    .contact-grid { grid-template-columns: repeat(2, 1fr); }
 }
-.nav-wrapper { width: 100%; text-align: center; }
-.brand-logo {
-    font-family: var(--font-brand); font-size: 1.6rem;
-    font-weight: 700; letter-spacing: -1px;
-}
-.highlight { color: var(--primary); text-shadow: 0 0 15px var(--primary-glow); }
-
-/* Hero Section */
-.hero {
-    padding: 40px 20px; position: relative;
-    min-height: 70vh; display: flex; align-items: center;
-}
-.particles { position: absolute; inset: 0; pointer-events: none; z-index: 1; }
-.particle {
-    position: absolute; background: var(--primary); border-radius: 50%;
-    animation: particleUp var(--duration) infinite linear;
-}
-
-.hero-glass-card {
-    background: rgba(255,255,255,0.03); border: 1px solid var(--border);
-    padding: 50px 25px; border-radius: 30px; position: relative; z-index: 10;
-    margin-bottom: 40px; box-shadow: var(--shadow);
-}
-.typing-text { font-family: var(--font-brand); font-size: 2.2rem; line-height: 1.2; margin-bottom: 15px; }
-.hero-slogan { color: var(--text-dim); font-size: 0.95rem; margin-bottom: 25px; }
-.hero-badges { display: flex; justify-content: center; gap: 15px; }
-.hero-badges span {
-    font-size: 0.7rem; background: var(--bg-card); padding: 5px 12px;
-    border-radius: 50px; border: 1px solid var(--border);
-}
-
-/* Main Menu Cards (Enlarged for Mobile) */
-.main-menu-grid {
-    display: grid; grid-template-columns: 1fr; gap: 15px;
-    position: relative; z-index: 10;
-}
-.menu-card {
-    background: var(--bg-card); border: 1px solid var(--border);
-    padding: 20px; border-radius: 20px; display: flex; align-items: center;
-    gap: 20px; transition: var(--transition); cursor: pointer;
-    animation: glowPulse 3s infinite;
-}
-.menu-card:active { transform: scale(0.95); }
-.menu-icon-box {
-    width: 55px; height: 55px; background: rgba(56, 189, 248, 0.1);
-    border-radius: 15px; display: flex; align-items: center; justify-content: center;
-    font-size: 1.5rem; color: var(--primary);
-}
-.menu-info h3 { 
-    font-size: 1.1rem; 
-    text-align: left; 
-    margin-bottom: 2px; 
-    color: #ffffff; /* Mengubah judul menu menjadi putih */
-}
-
-.menu-info p { 
-    font-size: 0.8rem; 
-    color: #cbd5e1; /* Mengubah deskripsi menjadi putih abu-abu agar tidak flat */
-    text-align: left; 
-}
-
-/* Product Display */
-.product-lists-container { padding: 40px 20px; display: none; }
-.product-lists-container.active { display: block; animation: fadeInUp 0.6s ease; }
-.section-title { font-family: var(--font-brand); font-size: 1.8rem; text-align: center; margin-bottom: 30px; }
-
-.p-card {
-    background: var(--bg-card); border: 1px solid var(--border);
-    border-radius: 25px; padding: 30px; margin-bottom: 25px;
-    position: relative; overflow: hidden;
-}
-.p-badge {
-    position: absolute; top: 15px; right: 15px; background: var(--primary);
-    color: #0F172A; font-size: 0.6rem; font-weight: 800; padding: 4px 10px; border-radius: 5px;
-}
-.p-price { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin: 15px 0; }
-.p-features { list-style: none; text-align: left; margin-bottom: 20px; }
-.p-features li { font-size: 0.9rem; color: var(--text-dim); margin-bottom: 8px; }
-.p-features i { color: var(--accent); margin-right: 8px; }
-
-.btn-buy {
-    width: 100%; padding: 16px; background: var(--primary); border: none;
-    border-radius: 15px; font-weight: 800; font-family: var(--font-brand);
-    cursor: pointer; transition: 0.3s;
-}
-
-/* Nokos Style */
-.nokos-container { margin-bottom: 20px; text-align: left; }
-.nokos-select {
-    width: 100%; padding: 12px; border-radius: 10px; background: var(--bg-deep);
-    border: 1px solid var(--border); color: white; margin-top: 8px;
-}
-
-/* Contact Cards (6 Grid) */
-.contact-section { padding: 60px 20px; }
-.contact-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-.contact-item {
-    background: var(--bg-card); border: 1px solid var(--border);
-    padding: 25px 15px; border-radius: 20px; text-align: center; transition: 0.3s;
-}
-.icon-lg { font-size: 2.2rem; margin-bottom: 15px; display: block; color: var(--primary); }
-.contact-item h3 { font-size: 0.85rem; margin-bottom: 15px; height: 35px; }
-.contact-item button {
-    width: 100%; padding: 10px; border-radius: 10px; border: none;
-    font-size: 0.75rem; font-weight: 700; cursor: pointer;
-}
-
-/* Specific Contact Colors */
-.order button { background: #25D366; color: white; }
-.tele button { background: #0088cc; color: white; }
-.testi button { background: #FFD700; color: black; }
-.tiktok button { background: white; color: black; }
-
-/* Responsive Desktop */
-@media (min-width: 768px) {
-    .main-menu-grid { grid-template-columns: repeat(3, 1fr); }
-    .contact-grid { grid-template-columns: repeat(3, 1fr); }
-    .hero-glass-card { padding: 80px; }
-    .typing-text { font-size: 4rem; }
-    .p-card:hover { transform: translateY(-10px); border-color: var(--primary); }
-}
-
-@keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(30px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-footer { padding: 40px; text-align: center; border-top: 1px solid var(--border); font-size: 0.8rem; color: var(--text-dim); }
