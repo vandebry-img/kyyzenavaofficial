@@ -19,7 +19,9 @@ const products = {
         title: "⚙️ Layanan Jadi Bot",
         items: [
             { name: "Jadi Bot Reguler", price: "50.000", features: ["Numpang Bot Admin", "Fitur Lengkap", "Full Akses Chat", "Aktif 30 Hari"] },
-            { name: "Jadi Bot Reguler (Rename)", price: "70.000", features: ["Bisa Custom Nama Bot", "Fitur Lengkap", "Tampilan Profesional", "Aktif 30 Hari"] }
+  { name: "Jadi Bot Reguler (Rename)", price: "70.000", features: ["Bisa Custom Nama Bot", "Fitur Lengkap", "Tampilan Profesional", "Aktif 30 Hari"] },
+  { name: "Jadi Bot VIP", price: "90.000", features: ["Prioritas Server", "Fitur Super Lengkap", "Full Akses Chat", "Anti Delay / Lebih Stabil", "Support Prioritas", "Aktif 30 Hari"] },
+  { name: "Jadi Bot VIP (Rename)", price: "110.000", features: ["Custom Nama Bot", "Prioritas Server", "Fitur Super Lengkap", "Tampilan Premium & Profesional", "Anti Delay / Lebih Stabil", "Support Prioritas", "Aktif 30 Hari"] }
         ]
     },
     script: {
