@@ -52,10 +52,23 @@ body {
     position: absolute; inset: 0; pointer-events: none; z-index: 1;
 }
 
+/* Partikel Dark Blue Smooth */
 .particle {
-    position: absolute; background: var(--primary); border-radius: 50%;
-    opacity: 0.4; animation: floatUp var(--duration) infinite linear;
-    filter: blur(1px);
+    position: absolute; 
+    /* Gunakan warna Biru Malam yang lembut */
+    background: #1e3a8a; 
+    
+    border-radius: 50%;
+    /* Opacity rendah supaya smooth (transparan) */
+    opacity: 0.3; 
+    
+    animation: floatUp var(--duration) infinite linear;
+    
+    /* Tambahkan blur lebih besar agar terlihat seperti cahaya lembut (bokeh) */
+    filter: blur(3px); 
+    
+    /* Opsional: Tambahkan sedikit glow pada partikel */
+    box-shadow: 0 0 10px rgba(30, 58, 138, 0.5);
 }
 
 @keyframes floatUp {
