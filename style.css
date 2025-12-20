@@ -253,6 +253,13 @@ body {
                 url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.png');
     background-size: cover;
     background-position: center;
+    
+    /* TAMBAHKAN BARIS INI */
+    border-radius: 25px; 
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Garis pinggir tipis agar lebih mewah */
+    padding: 25px 10px;
+    text-align: center;
+    overflow: hidden; /* Memastikan gambar background tidak keluar dari sudut tumpul */
 }
 
 .contact-item i { font-size: 2.2rem; margin-bottom: 15px; display: block; color: var(--primary); }
