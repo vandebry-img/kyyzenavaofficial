@@ -158,9 +158,14 @@ body {
     margin: 0 auto;
 }
 
+/* --- MENU CARD DENGAN BACKGROUND FOTO --- */
 .menu-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    /* Menggunakan overlay hitam transparan agar tulisan tetap terbaca jelas */
+    background: linear-gradient(rgba(10, 17, 40, 0.75), rgba(10, 17, 40, 0.75)), 
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     padding: 25px;
     border-radius: 25px;
     display: flex;
@@ -168,12 +173,18 @@ body {
     gap: 20px;
     cursor: pointer;
     transition: var(--transition);
+    overflow: hidden;
+    position: relative;
 }
 
 .menu-card:hover {
-    border-color: var(--primary);
     transform: translateY(-8px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    border-color: var(--primary);
+    /* Efek saat hover: overlay menjadi sedikit lebih terang */
+    background: linear-gradient(rgba(10, 17, 40, 0.6), rgba(10, 17, 40, 0.6)), 
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .menu-icon {
@@ -196,15 +207,23 @@ body {
     gap: 25px;
 }
 
+/* --- PRODUCT CARD DENGAN BACKGROUND FOTO --- */
 .p-card {
-    background: var(--bg-card);
-    border: 1px solid var(--border);
+    background: linear-gradient(rgba(21, 30, 61, 0.8), rgba(21, 30, 61, 0.8)), 
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.png');
+    background-size: cover;
+    background-position: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 30px;
     padding: 40px 30px;
     transition: var(--transition);
+    text-align: center;
 }
 
-.p-card:hover { border-color: var(--primary); }
+.p-card:hover {
+    border-color: var(--primary);
+    transform: scale(1.02);
+}
 
 .p-badge {
     display: inline-block; background: rgba(56, 189, 248, 0.15);
