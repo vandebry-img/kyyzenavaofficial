@@ -175,7 +175,7 @@ body {
 .menu-card {
     /* Menggunakan overlay hitam transparan agar tulisan tetap terbaca jelas */
     background: linear-gradient(rgba(10, 17, 40, 0.75), rgba(10, 17, 40, 0.75)), 
-                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/ppp.jpg');
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/ppp.png');
     background-size: cover;
     background-position: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
