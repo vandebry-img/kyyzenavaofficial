@@ -175,7 +175,7 @@ body {
 .menu-card {
     /* Menggunakan overlay hitam transparan agar tulisan tetap terbaca jelas */
     background: linear-gradient(rgba(10, 17, 40, 0.75), rgba(10, 17, 40, 0.75)), 
-                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.jpg');
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/ppp.jpg');
     background-size: cover;
     background-position: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -195,7 +195,7 @@ body {
     border-color: var(--primary);
     /* Efek saat hover: overlay menjadi sedikit lebih terang */
     background: linear-gradient(rgba(10, 17, 40, 0.6), rgba(10, 17, 40, 0.6)), 
-                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.jpg');
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/ppp.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -244,7 +244,7 @@ body {
     font-weight: 800; font-size: 0.7rem; margin-bottom: 15px;
 }
 
-.p-price { font-size: 2.2rem; font-weight: 800; color: #888888; margin-bottom: 20px; }
+.p-price { font-size: 2.2rem; font-weight: 800; color: #ffffff; margin-bottom: 20px; }
 
 .p-features { list-style: none; text-align: left; margin-bottom: 30px; }
 .p-features li { color: var(--text-dim); margin-bottom: 12px; font-size: 0.95rem; display: flex; align-items: center; }
@@ -254,7 +254,15 @@ body {
     width: 100%; padding: 18px; background: var(--primary); color: #0a1128;
     border: none; border-radius: 18px; font-weight: 800; cursor: pointer; transition: 0.3s;
 }
-
+.p-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    
+    /* GANTI WARNA DI SINI */
+    color: #36c9ff; /* Putih agar jelas di atas background foto */
+    
+    font-weight: 700;
+}
 /* --- CONTACT SECTION (Pastel Colors) --- */
 .contact-grid {
     display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
@@ -263,7 +271,7 @@ body {
 
 .contact-item {
     background: linear-gradient(rgba(10, 17, 40, 0.8), rgba(10, 17, 40, 0.8)), 
-                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/card.jpg');
+                url('https://cdn.jsdelivr.net/gh/vandebry-img/img@main/ppp.jpg');
     background-size: cover;
     background-position: center;
     
