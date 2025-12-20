@@ -276,10 +276,22 @@ body {
 }
 
 .contact-item i { font-size: 2.2rem; margin-bottom: 15px; display: block; color: var(--primary); }
-.contact-item h3 { font-size: 0.85rem; margin-bottom: 15px; color: #888888; }
+.contact-item h3 { font-size: 0.85rem; margin-bottom: 15px; color: #ffffff; }
 .contact-item button {
     width: 100%; padding: 12px; border: none; border-radius: 12px;
     font-weight: 800; cursor: pointer; font-size: 0.75rem;
+}
+.contact-section h2 {
+    font-family: var(--font-brand);
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    
+    /* GANTI WARNA DI SINI */
+    color: #ffffff; /* Bisa diganti ke Biru Malam (#191970) atau Biru Pastel (#38bdf8) */
+    
+    /* Tambahkan efek cahaya tipis agar makin estetik */
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 /* Button Colors Soft Pastel */
