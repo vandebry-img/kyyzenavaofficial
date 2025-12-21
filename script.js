@@ -11,7 +11,7 @@ const products = {
     rental: {
         title: "🤖 Layanan Sewa Bot",
         items: [
-            { name: "Sewabot Reguler", price: "30.000", features: ["Fitur Downloader", "AI Chat Active", "Khusus Grup", "Bebas Req Nama dan Tema Bot", "Masa Aktif: PERMANEN"] },
+            { name: "Sewabot Reguler", price: "30.000", features: ["Fitur Downloader", "AI Chat Active", "Khusus Grup", "Tidak bisa Req Nama dan Tema Bot", "Masa Aktif: PERMANEN"] },
             { name: "Sewabot VIP", price: "50.000", features: ["Semua Fitur Premium", "Bebas Masuk Bot", "Prioritas Respon", "Bebas Req Nama dan Tema Bot", "Masa Aktif: PERMANEN"] }
         ]
     },
